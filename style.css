@@ -23,7 +23,9 @@ body {
   margin: auto;
   height: 300px;
   width: 300px;
+  /* Because .circle and .gradient-circle positioned absolute within this container element */
   position: relative;
+  /* This is the default */
   transform: scale(1);
 }
 
