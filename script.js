@@ -1,9 +1,9 @@
 const container = document.getElementById('container');
 const text = document.getElementById('text');
 
-const totalTime = 7500; // ms
-const breatheTime = (totalTime / 5) * 2; // = 3000 ms
-const holdTime = totalTime / 5; // = 1500 ms
+const totalTime = 13000;
+const breatheTime = (totalTime / 5) * 2;
+const holdTime = totalTime / 5;
 
 function breathAnimation() {
   text.innerText = 'Breathe In!';
@@ -23,5 +23,5 @@ function breathAnimation() {
 // So it runs right away; don't need to wait for setInterval to call it
 breathAnimation();
 
-// Run animation every 7.5 seconds
+// Run animation every # of seconds as defined by totalTime
 setInterval(breathAnimation, totalTime);
